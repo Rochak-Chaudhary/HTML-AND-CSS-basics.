@@ -2,6 +2,12 @@
 <html>
     <head>
         <Title>Table Lessons Learning</Title>
+        <style>
+            tr:hover {
+                background-color: rgb(222, 164, 164);
+            }
+                
+        </style>
     </head>
     <body>
         <h1><u> HTML Tables </u></h1>
@@ -34,6 +40,7 @@
         <h1> <u>HTML table headers</u></h1>
         <h2>Html vertical table headers</h2>
         <table style="width: 100%;" border="1" cellpadding="10" cellspacing="o">
+            <caption>studies tables</caption>
             <tr>
                 <th>First name</th>
                 <td>Rochak</td>
@@ -50,6 +57,115 @@
                 <td>19</td>
             </tr>
         </table>
+        <h2>Table headers</h2>
+        <table style="width:100%;" border="1" cellpadding="10" cellspacing="0">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+</table>
+<h2> A table that spans two header</h2>
+<p>Use the colspan attribute to have a header span over multiple columns</p>
+<table style="width: 100%;"" border="1" cellpadding="10" cellspacing="0">
+    <tr>
+        <th colspan="2">Name</th>
+        <th>Age</th>
+    </tr>
+    <tr>
+        <td>john</td>
+        <td>smith</td>
+        <td>50</td>
+
+    </tr>
+    <tr>
+        <td>epstein</td>
+        <td>island</td>
+        <td>100</td>
+    </tr>
+</table>
+<h2 style="text-align:center;">Cell that span two rows</h2>
+<p>To make a cell span more than one row, use the rowspan attribute</p>
+<table style="width: 100%;" border="1" cellpadding="10" cellspacing="0">
+    <tr>
+        <th>Name</th>
+        <td>Novel</td>
+    </tr>
+    <tr>
+        <th rowspan="2">Phone</th>
+        <td>55-111</td>
+    </tr>
+    <tr>
+        <td>52-111</td>
+    </tr>
+</table>
+<h2 style="text-align: center;">Colgroup</h2>
+<p>Add the a colgroup with a col element that spans over two columns to define a style for the two columns:</p>
+<table style="width: 100%;" border="1" cellpadding="10" cellspacing="0">
+<colgroup>
+  <col span="2" style="background-color: #D6EEEE">
+  <col span="1" style="background-color: #7a84b0">
+  <col span="2" style="background-color: #d7b788">
+</colgroup>
+<tr>
+<th>MON</th>
+<th>TUE</th>
+<th>WED</th>
+<th>THU</th>
+<th>FRI</th>
+<th>SAT</th>
+<th>SUN</th>
+</tr>
+<tr>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+<td>4</td>
+<td>5</td>
+<td>6</td>
+<td>7</td>
+</tr>
+<tr>
+<td>8</td>
+<td>9</td>
+<td>10</td>
+<td>11</td>
+<td>12</td>
+<td>13</td>
+<td>14</td>
+</tr>
+<tr>
+<td>15</td>
+<td>16</td>
+<td>17</td>
+<td>18</td>
+<td>19</td>
+<td>20</td>
+<td>21</td>
+</tr>
+<tr>
+<td>22</td>
+<td>23</td>
+<td>24</td>
+<td>25</td>
+<td>26</td>
+<td>27</td>
+<td>28</td>
+</tr>
+</table>
+
+
+
         
     </body>
 </html>
